@@ -1,21 +1,17 @@
-public class UsluSayilarTablosu {
+public class CarpimTablosuIki {
 
     public static void main(String[] args) {
         
-         System.out.println("Üslü Sayılar Tablosu");
-        System.out.println("===================");
-        System.out.printf("%-5s | %-5s | %s%n", "a", "a^2", "a^3");
-        System.out.println("-------------------");
+        int carpan = 2; 
+        int sinir = 10;
+        System.out.println("--- " + carpan + "'nin Çarpım Tablosu (1'den " + sinir + "'a Kadar) ---");
+        System.out.println("==========================================");
         
-        for (int a = 1; a <= 5; a++) {
+        for (int i = 1; i <= sinir; i++) {
             
-            int aKare = a * a;
-            int aKup = a * a * a;
-            
-            
-            System.out.printf("%-5d | %-5d | %d%n", a, aKare, aKup);
+            int sonuc = carpan * i; 
+            System.out.printf("%d x %-2d = %d%n", carpan, i, sonuc);
         }
-        
-        System.out.println("===================");
+        System.out.println("==========================================");
     }
 }
