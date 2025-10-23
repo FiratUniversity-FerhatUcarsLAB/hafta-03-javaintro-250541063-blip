@@ -1,28 +1,18 @@
-public class DonusumTablosu {
+public class CarpimTablosuIki {
 
     public static void main(String[] args) {
         
-        final double MIL_KM_ORANI = 1.609;
+        int carpan = 2; 
+        int sinir = 10;
+        System.out.println("--- " + carpan + "'nin Çarpım Tablosu (1'den " + sinir + "'a Kadar) ---");
+        System.out.println("==========================================");
         
-       
-        int[] milDegerleri = {1, 5, 10, 20, 50};
-    
-        System.out.println("Mil → Kilometre Dönüşüm Tablosu");
-        System.out.println("=================================");
-        System.out.printf("%-10s | %s%n", "Mil", "Kilometre");
-        System.out.println("---------------------------------");
-        
-       
-        for (int mil : milDegerleri) {
+        for (int i = 1; i <= sinir; i++) {
             
-            
-            double kilometre = mil * MIL_KM_ORANI;
-            
-           
-            System.out.printf("%-10d | %.3f%n", mil, kilometre);
+            int sonuc = carpan * i; 
+            System.out.printf("%d x %-2d = %d%n", carpan, i, sonuc);
         }
-        
-        System.out.println("=================================");
-        System.out.printf("(1 Mil = %.3f Km)%n", MIL_KM_ORANI);
+        System.out.println("==========================================");
     }
 }
+
