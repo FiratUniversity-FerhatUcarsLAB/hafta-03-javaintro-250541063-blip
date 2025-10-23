@@ -1,18 +1,18 @@
-public class CarpimTablosuIki {
-
+public class MilToKilometre {
     public static void main(String[] args) {
-        
-        int carpan = 2; 
-        int sinir = 10;
-        System.out.println("--- " + carpan + "'nin Çarpım Tablosu (1'den " + sinir + "'a Kadar) ---");
-        System.out.println("==========================================");
-        
-        for (int i = 1; i <= sinir; i++) {
-            
-            int sonuc = carpan * i; 
-            System.out.printf("%d x %-2d = %d%n", carpan, i, sonuc);
+        // Dönüşüm katsayısı
+        double katsayi = 1.609;
+
+        // Mil değerleri
+        int[] milDegerleri = {1, 5, 10, 20, 50};
+
+        System.out.println("Mil -> Kilometre Dönüşüm Tablosu");
+        System.out.println("-------------------------------");
+
+        for (int mil : milDegerleri) {
+            double kilometre = mil * katsayi;
+            System.out.println(mil + " mil = " + kilometre + " kilometre");
         }
-        System.out.println("==========================================");
     }
 }
 
